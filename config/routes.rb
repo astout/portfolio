@@ -4,6 +4,14 @@ Portfolio::Application.routes.draw do
   get "static_pages/software"
   get "static_pages/web"
   get "static_pages/contact"
+
+  root 'static_pages#home'
+
+  match '/web',    to: 'static_pages#web',    via: 'get'
+  match '/games',    to: 'static_pages#games',    via: 'get'
+  match '/software',    to: 'static_pages#software',    via: 'get'
+  match '/contact',    to: 'static_pages#contact',    via: 'get'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

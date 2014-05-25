@@ -4,6 +4,9 @@ ruby '2.1.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.5'
 
+gem 'bootstrap-sass'
+gem 'bootstrap_form'
+
 group :development, :test do
   gem 'sqlite3', '1.3.8'
   gem 'rspec-rails', '2.13.1'

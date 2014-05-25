@@ -1,0 +1,17 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <%= link_to "Alex", root_path, id: "logo-first" %>
+      <%= link_to "Stout", root_path, id: "logo-last" %>
+      <div id="navigation-group">
+        <div id="nav-btn-group" class="btn-group">
+          <%= link_to "Home",    root_path, class: "btn btn-default" %>
+          <%= link_to "Software",    software_path, class: "btn btn-default" %>
+          <%= link_to "3D && Games",    games_path, class: "btn btn-default" %>
+          <%= link_to "Web",    web_path, class: "btn btn-default" %>
+          <%= link_to "Contact",    contact_path, class: "btn btn-default" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
